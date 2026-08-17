@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "galpy-stubs"
+version = "1.0.0"
+description = "Type stubs for galpy"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Pavadol Yamsiri", email = "pavyamsiri@gmail.com" }
+]
+dependencies = [
+    "galpy>=1.12.0",
+    "optype[numpy]>=0.17.0",
+]
+
+classifiers = [
+    "Typing :: Stubs Only",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["galpy-stubs"]
+
+[tool.pyright]
+exclude = [
+  "**/__pycache__",
+  "**/.mypy_cache",
+  "**/.ruff_cache",
+  "**/.tox",
+  "**/.venv",
+]
+ignore = [".venv"]
+stubPath = "."
+venvPath = "."
+venv = ".venv"
+pythonPlatform = "All"
+typeCheckingMode = "strict"
+deprecateTypingAliases = true
+enableReachabilityAnalysis = false
+enableTypeIgnoreComments = false
+reportCallInDefaultInitializer = true
+reportImplicitOverride = true
+reportImportCycles = true
+reportMissingSuperCall = true
+reportPropertyTypeMismatch = false
+reportUninitializedInstanceVariable = true
+reportUnnecessaryTypeIgnoreComment = true
+reportUnusedCallResult = true
+
+# type-checkers should type-check; linters should lint
+reportImplicitStringConcatenation = false
+reportPrivateImportUsage = false
+reportPrivateUsage = false
+
+# basedpyright
+failOnWarnings = true
+reportIgnoreCommentWithoutRule = true
+reportImplicitAbstractClass = false
+reportImplicitRelativeImport = true
+reportInvalidCast = true
+reportPrivateLocalImportUsage = true
+reportUnannotatedClassAttribute = false
+strictGenericNarrowing = false
+
+[[tool.pyright.executionEnvironments]]
+root = "tests"
+reportInvalidStubStatement = false
+reportUnusedCallResult = false
+reportUnusedExpression = false
+
+[tool.ruff]
+target-version = "py313"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP"]
+
+[dependency-groups]
+dev = [
+    "basedmypy>=2.10.0",
+    "basedpyright>=1.39.3",
+    "pyrefly>=1.2.0",
+    "ruff>=0.16.3",
+    "ty>=0.0.71",
+]

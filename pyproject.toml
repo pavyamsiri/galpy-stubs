@@ -33,7 +33,7 @@ exclude = [
   "**/.venv",
 ]
 ignore = [".venv"]
-stubPath = "galpy-stubs"
+stubPath = "."
 venvPath = "."
 venv = ".venv"
 pythonPlatform = "All"

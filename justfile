@@ -30,7 +30,7 @@ basedpyright:
     .venv/bin/basedpyright {{stubs}} {{typing_tests}}
 
 basedmypy:
-    .venv/bin/mypy --no-incremental --no-strict --strict --disable-error-code=explicit-any --disable-error-code=misc --disable-error-code=explicit-override --disable-error-code=override --disable-error-code=type-arg --disable-error-code=import-untyped --disable-error-code=subclass-any --disable-error-code=no-any-unimported --disable-error-code=attr-defined --python-executable {{python}} --python-version 3.13 {{stubs}} {{typing_tests}}
+    {{python}} scripts/run_mypy.py --no-incremental --no-strict --strict --disable-error-code=explicit-any --disable-error-code=misc --disable-error-code=explicit-override --disable-error-code=override --disable-error-code=type-arg --disable-error-code=import-untyped --disable-error-code=subclass-any --disable-error-code=no-any-unimported --disable-error-code=attr-defined --python-executable {{python}} --python-version 3.13 {{stubs}} {{typing_tests}}
 
 ty:
     .venv/bin/ty check --python .venv --extra-search-path . {{stubs}}

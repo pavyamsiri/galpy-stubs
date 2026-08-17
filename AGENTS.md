@@ -6,7 +6,9 @@ project targets Python 3.13.
 
 ## Layout
 
-- `galpy-stubs/galpy/` mirrors the importable `galpy` module tree.
+- `galpy-stubs/` mirrors the importable `galpy` module tree. It is named with
+  the `<package-name>-stubs` convention so type checkers associate it with
+  the separately installed `galpy` runtime package.
 - `tests/typing/` contains small consumer-facing typing fixtures.
 - `scripts/` contains reproducible generation and inspection helpers.
 - `docs/` records overload audits and runtime findings.

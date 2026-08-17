@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PYRIGHT = ROOT / ".venv" / "bin" / "basedpyright"
-TARGET = ROOT / "galpy-stubs" / "galpy"
+TARGET = ROOT / "galpy-stubs"
 
 
 def main() -> None:
@@ -40,9 +40,11 @@ def main() -> None:
             raise RuntimeError("basedpyright did not create a galpy directory")
         if TARGET.exists():
             shutil.rmtree(TARGET)
-        shutil.move(str(generated), str(TARGET))
+        TARGET.mkdir()
+        for child in generated.iterdir():
+            shutil.move(str(child), str(TARGET / child.name))
         (TARGET / "py.typed").write_text(
-            "# PEP 561 marker for the nested galpy stub package.\n",
+            "# PEP 561 marker for the galpy-stubs package.\n",
             encoding="utf-8",
         )
     print(f"generated {TARGET.relative_to(ROOT)}")

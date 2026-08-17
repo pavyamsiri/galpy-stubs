@@ -1,0 +1,13 @@
+_APY_UNITS: bool
+_APY_LOADED: bool
+_APY3: bool
+_APY_GE_31: bool
+_APY_COORD_LOADED: bool
+_ASTROQUERY_LOADED: bool
+_AQ_GT_47: bool
+_NUMEXPR_LOADED: bool
+_TQDM_LOADED: bool
+_NUMBA_LOADED: bool
+_JAX_LOADED: bool
+_PYNBODY_LOADED: bool
+_PYNBODY_GE_20: bool

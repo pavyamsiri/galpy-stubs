@@ -1,0 +1,10 @@
+from galpy.potential.CompositePotential import CompositePotential
+from galpy.potential.HenonHeilesPotential import HenonHeilesPotential
+from galpy.potential.KGPotential import KGPotential
+from galpy.potential.linearCompositePotential import linearCompositePotential
+from galpy.potential.planarCompositePotential import planarCompositePotential
+from galpy.potential.PlummerPotential import PlummerPotential
+
+CompositePotential(PlummerPotential())
+linearCompositePotential(KGPotential())
+planarCompositePotential(HenonHeilesPotential())

@@ -1,0 +1,6 @@
+from galpy.util.ars import ars
+
+def log_density(x: float, scale: float) -> float: ...
+def log_density_prime(x: float, scale: float) -> float: ...
+
+ars([-5.0, 5.0], [True, True], [-1.0, 1.0], log_density, log_density_prime)

@@ -1,8 +1,8 @@
 from collections.abc import Callable
 
+from ._typing import Numeric, QuantityLike
 from .DissipativeForce import DissipativeForce
 from .Potential import Potential
-from ._typing import Numeric, QuantityLike
 
 class ChandrasekharDynamicalFrictionForce(DissipativeForce):
     def __init__(

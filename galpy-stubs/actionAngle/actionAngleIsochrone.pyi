@@ -1,11 +1,11 @@
-from .actionAngle import actionAngle
+from ..potential._typing import Numeric, QuantityLike
+from ..potential.IsochronePotential import IsochronePotential
 from .actionAngle import (
     ActionFrequencyAngleResult,
     ActionFrequencyResult,
     SphericalActionResult,
+    actionAngle,
 )
-from ..potential.IsochronePotential import IsochronePotential
-from ..potential._typing import Numeric, QuantityLike
 
 class actionAngleIsochrone(actionAngle):
     def __init__(

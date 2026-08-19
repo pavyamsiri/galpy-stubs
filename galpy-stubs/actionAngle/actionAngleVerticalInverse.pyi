@@ -1,6 +1,7 @@
-from .actionAngleInverse import actionAngleInverse
-from ..potential.linearPotential import linearPotential
 from optype import numpy as onp
+
+from ..potential.linearPotential import linearPotential
+from .actionAngleInverse import actionAngleInverse
 
 class actionAngleVerticalInverse(actionAngleInverse):
     def __init__(

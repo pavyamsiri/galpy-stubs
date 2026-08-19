@@ -3,8 +3,8 @@ from typing import Literal, Self
 
 from optype import numpy as onp
 
-from ..potential.Potential import Potential
 from ..potential._typing import Numeric, QuantityLike
+from ..potential.Potential import Potential
 
 type OrbitInput = onp.ArrayND | QuantityLike | list[object] | None
 type TimeInput = Numeric | QuantityLike | onp.ArrayND | list[Numeric]

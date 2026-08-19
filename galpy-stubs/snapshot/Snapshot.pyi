@@ -1,5 +1,6 @@
-from optype import numpy as onp
 from typing import override
+
+from optype import numpy as onp
 
 class Snapshot:
     def __init__(self, *args: object, **kwargs: object) -> None: ...

@@ -1,6 +1,6 @@
+from ._typing import QuantityLike
 from .Potential import Potential
 from .WrapperPotential import parentWrapperPotential
-from ._typing import QuantityLike
 
 class SolidBodyRotationWrapperPotential(parentWrapperPotential):
     def __new__(

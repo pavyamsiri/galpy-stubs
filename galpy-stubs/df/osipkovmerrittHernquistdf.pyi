@@ -1,8 +1,10 @@
-from .osipkovmerrittdf import _osipkovmerrittdf
 from typing import override
-from ..potential.Potential import Potential
-from ..potential._typing import QuantityLike
+
 from optype import numpy as onp
+
+from ..potential._typing import QuantityLike
+from ..potential.Potential import Potential
+from .osipkovmerrittdf import _osipkovmerrittdf
 
 class osipkovmerrittHernquistdf(_osipkovmerrittdf):
     def __init__(

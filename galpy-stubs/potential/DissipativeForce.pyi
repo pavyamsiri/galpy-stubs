@@ -1,5 +1,5 @@
+from ._typing import Numeric, QuantityLike
 from .Force import Force
-from ._typing import QuantityLike, Numeric
 
 class DissipativeForce(Force):
     isNonAxi: bool

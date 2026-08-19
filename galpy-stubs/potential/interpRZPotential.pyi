@@ -1,5 +1,5 @@
-from .Potential import Potential
 from ._typing import GridSpec, QuantityLike
+from .Potential import Potential
 
 class interpRZPotential(Potential):
     def __init__(

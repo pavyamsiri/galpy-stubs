@@ -1,8 +1,8 @@
 from typing import override
 
+from ._typing import QuantityLike
 from .baseCompositePotential import baseCompositePotential
 from .linearPotential import linearPotential
-from ._typing import QuantityLike
 
 class linearCompositePotential(baseCompositePotential, linearPotential):
     def __init__(

@@ -1,8 +1,8 @@
 from collections.abc import Callable
 
+from .constantbetadf import constantbetadf as _constantbetadf
 from .constantbetaHernquistdf import constantbetaHernquistdf as _constantbetaHernquistdf
 from .constantbetaPowerLawdf import constantbetaPowerLawdf as _constantbetaPowerLawdf
-from .constantbetadf import constantbetadf as _constantbetadf
 from .df import df as _df
 from .eddingtondf import eddingtondf as _eddingtondf
 from .evolveddiskdf import evolveddiskdf as _evolveddiskdf
@@ -11,6 +11,7 @@ from .isotropicNFWdf import isotropicNFWdf as _isotropicNFWdf
 from .isotropicPlummerdf import isotropicPlummerdf as _isotropicPlummerdf
 from .isotropicPowerLawdf import isotropicPowerLawdf as _isotropicPowerLawdf
 from .kingdf import kingdf as _kingdf
+from .osipkovmerrittdf import osipkovmerrittdf as _osipkovmerrittdf
 from .osipkovmerrittHernquistdf import (
     osipkovmerrittHernquistdf as _osipkovmerrittHernquistdf,
 )
@@ -18,19 +19,26 @@ from .osipkovmerrittNFWdf import osipkovmerrittNFWdf as _osipkovmerrittNFWdf
 from .osipkovmerrittPowerLawdf import (
     osipkovmerrittPowerLawdf as _osipkovmerrittPowerLawdf,
 )
-from .osipkovmerrittdf import osipkovmerrittdf as _osipkovmerrittdf
 from .quasiisothermaldf import quasiisothermaldf as _quasiisothermaldf
 from .sphericaldf import sphericaldf as _sphericaldf
 from .streamdf import streamdf as _streamdf
 from .streamgapdf import streamgapdf as _streamgapdf
 from .streamspraydf import (
     chen24spraydf as _chen24spraydf,
+)
+from .streamspraydf import (
     fardal15spraydf as _fardal15spraydf,
+)
+from .streamspraydf import (
     pericenter_stripping_pdf as _pericenter_stripping_pdf,
+)
+from .streamspraydf import (
     streamspraydf as _streamspraydf,
 )
 from .streamTrack import (
     StreamTrack as _StreamTrack,
+)
+from .streamTrack import (
     StreamTrackPair as _StreamTrackPair,
 )
 

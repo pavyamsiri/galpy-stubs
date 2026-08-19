@@ -1,6 +1,7 @@
 from collections.abc import Callable
-from .SphericalPotential import SphericalPotential
+
 from ._typing import Numeric, QuantityLike
+from .SphericalPotential import SphericalPotential
 
 class AnySphericalPotential(SphericalPotential):
     def __init__(

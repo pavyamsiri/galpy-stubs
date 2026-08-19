@@ -1,11 +1,11 @@
+from ..potential._typing import Numeric, QuantityLike
+from ..potential.linearPotential import linearPotential
 from .actionAngle import (
     ActionFrequencyAngleResult,
     ActionFrequencyResult,
     ActionResult,
     actionAngle,
 )
-from ..potential.linearPotential import linearPotential
-from ..potential._typing import Numeric, QuantityLike
 
 class actionAngleVertical(actionAngle):
     def __init__(

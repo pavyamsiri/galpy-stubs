@@ -1,7 +1,9 @@
-from .sphericaldf import isotropicsphericaldf
 from typing import override
-from ..potential._typing import Numeric, QuantityLike
+
 from optype import numpy as onp
+
+from ..potential._typing import Numeric, QuantityLike
+from .sphericaldf import isotropicsphericaldf
 
 class kingdf(isotropicsphericaldf):
     def __init__(

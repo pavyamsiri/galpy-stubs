@@ -1,6 +1,7 @@
-from ..potential.Potential import Potential
-from ..potential._typing import Numeric, QuantityLike
 from optype import numpy as onp
+
+from ..potential._typing import Numeric, QuantityLike
+from ..potential.Potential import Potential
 from .df import df
 
 type SphericalPotentialInput = Potential | list[Potential]

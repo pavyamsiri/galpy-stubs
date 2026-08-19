@@ -1,5 +1,5 @@
-from .Potential import Potential
 from ._typing import Number, Numeric
+from .Potential import Potential
 
 class MN3ExponentialDiskPotential(Potential):
     def __init__(

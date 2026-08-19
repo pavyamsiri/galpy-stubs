@@ -1,5 +1,5 @@
-from .Potential import Potential
 from ._typing import QuantityLike
+from .Potential import Potential
 
 class RazorThinExponentialDiskPotential(Potential):
     def __init__(

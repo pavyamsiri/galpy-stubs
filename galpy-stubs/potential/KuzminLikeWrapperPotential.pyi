@@ -1,6 +1,6 @@
+from ._typing import QuantityLike
 from .Potential import Potential
 from .WrapperPotential import WrapperPotential
-from ._typing import QuantityLike
 
 class KuzminLikeWrapperPotential(WrapperPotential):
     def __init__(

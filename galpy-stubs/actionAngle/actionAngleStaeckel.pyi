@@ -1,11 +1,11 @@
+from ..potential._typing import Numeric, QuantityLike
+from ..potential.Potential import Potential
 from .actionAngle import (
     ActionFrequencyAngleResult,
     ActionFrequencyResult,
     SphericalActionResult,
     actionAngle,
 )
-from ..potential.Potential import Potential
-from ..potential._typing import Numeric, QuantityLike
 
 class actionAngleStaeckel(actionAngle):
     def __init__(

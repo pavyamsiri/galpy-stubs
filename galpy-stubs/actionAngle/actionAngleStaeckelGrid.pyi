@@ -1,6 +1,6 @@
-from .actionAngle import actionAngle
-from ..potential.Potential import Potential
 from ..potential._typing import Numeric, QuantityLike
+from ..potential.Potential import Potential
+from .actionAngle import actionAngle
 
 class actionAngleStaeckelGrid(actionAngle):
     def __init__(

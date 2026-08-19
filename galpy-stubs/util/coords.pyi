@@ -1,8 +1,9 @@
 from collections.abc import Callable
 from typing import overload
 
-from ..potential._typing import Numeric
 from optype import numpy as onp
+
+from ..potential._typing import Numeric
 
 type Pair = tuple[Numeric, Numeric]
 type Triple = tuple[Numeric, Numeric, Numeric]

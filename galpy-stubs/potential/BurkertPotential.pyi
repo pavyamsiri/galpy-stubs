@@ -1,5 +1,5 @@
-from .SphericalPotential import SphericalPotential
 from ._typing import QuantityLike
+from .SphericalPotential import SphericalPotential
 
 class BurkertPotential(SphericalPotential):
     def __init__(

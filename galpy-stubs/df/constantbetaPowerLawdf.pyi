@@ -1,8 +1,10 @@
-from .constantbetadf import _constantbetadf
 from typing import override
-from ..potential.Potential import Potential
-from ..potential._typing import QuantityLike
+
 from optype import numpy as onp
+
+from ..potential._typing import QuantityLike
+from ..potential.Potential import Potential
+from .constantbetadf import _constantbetadf
 
 class constantbetaPowerLawdf(_constantbetadf):
     def __init__(

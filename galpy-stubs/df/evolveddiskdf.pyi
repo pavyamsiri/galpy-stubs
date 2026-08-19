@@ -1,5 +1,5 @@
-from ..potential.Potential import Potential
 from ..potential._typing import Numeric
+from ..potential.Potential import Potential
 from .df import df
 
 class evolveddiskdf(df):

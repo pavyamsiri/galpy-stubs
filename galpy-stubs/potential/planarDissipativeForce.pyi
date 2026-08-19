@@ -1,6 +1,6 @@
 from typing import override
 
-from ._typing import QuantityLike, Numeric
+from ._typing import Numeric, QuantityLike
 from .planarForce import planarForce
 
 class planarDissipativeForce(planarForce):

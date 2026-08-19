@@ -1,8 +1,8 @@
 from optype import numpy as onp
 
+from ..potential._typing import Numeric, QuantityLike
 from ..potential.IsochronePotential import IsochronePotential
 from ..potential.Potential import Potential
-from ..potential._typing import Numeric, QuantityLike
 from .actionAngle import (
     ActionResult,
     actionAngle,

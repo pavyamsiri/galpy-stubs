@@ -1,6 +1,7 @@
 from typing import override
 
 from optype import numpy as onp
+
 from ..potential._typing import Numeric, QuantityLike
 from .sphericaldf import SphericalPotentialInput, anisotropicsphericaldf
 

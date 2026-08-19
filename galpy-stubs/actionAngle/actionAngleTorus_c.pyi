@@ -1,7 +1,7 @@
 from optype import numpy as onp
 
-from ..potential.Potential import Potential
 from ..potential._typing import Numeric
+from ..potential.Potential import Potential
 
 type TorusPotential = Potential | list[Potential]
 

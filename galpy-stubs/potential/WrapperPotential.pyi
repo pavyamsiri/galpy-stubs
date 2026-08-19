@@ -1,9 +1,9 @@
 from collections.abc import Callable
 from typing import Self, override
 
-from .Potential import Potential
 from ._typing import QuantityLike
 from .planarPotential import planarPotential
+from .Potential import Potential
 
 class parentWrapperPotential:
     def __new__(cls, *args: object, **kwargs: object) -> Self: ...

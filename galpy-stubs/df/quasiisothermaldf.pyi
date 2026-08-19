@@ -1,7 +1,7 @@
-from .df import df
 from ..actionAngle.actionAngle import actionAngle
-from ..potential.Potential import Potential
 from ..potential._typing import QuantityLike
+from ..potential.Potential import Potential
+from .df import df
 
 class quasiisothermaldf(df):
     def __init__(

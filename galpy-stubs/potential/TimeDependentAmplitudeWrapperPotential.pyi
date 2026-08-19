@@ -1,8 +1,8 @@
 from collections.abc import Callable
 
+from ._typing import QuantityLike
 from .Potential import Potential
 from .WrapperPotential import parentWrapperPotential
-from ._typing import QuantityLike
 
 class TimeDependentAmplitudeWrapperPotential(parentWrapperPotential):
     def __new__(

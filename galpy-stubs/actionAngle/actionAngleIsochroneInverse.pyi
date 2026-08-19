@@ -1,6 +1,6 @@
-from .actionAngleInverse import actionAngleInverse
-from ..potential.IsochronePotential import IsochronePotential
 from ..potential._typing import QuantityLike
+from ..potential.IsochronePotential import IsochronePotential
+from .actionAngleInverse import actionAngleInverse
 
 class actionAngleIsochroneInverse(actionAngleInverse):
     def __init__(

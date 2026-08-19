@@ -1,6 +1,10 @@
-from .actionAngle import actionAngle
 from ..potential._typing import Numeric, QuantityLike
-from .actionAngle import ActionFrequencyAngleResult, ActionFrequencyResult, ActionResult
+from .actionAngle import (
+    ActionFrequencyAngleResult,
+    ActionFrequencyResult,
+    ActionResult,
+    actionAngle,
+)
 
 class actionAngleHarmonic(actionAngle):
     def __init__(

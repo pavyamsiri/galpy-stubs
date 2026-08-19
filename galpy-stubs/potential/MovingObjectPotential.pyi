@@ -1,6 +1,6 @@
-from .Potential import Potential
-from ._typing import QuantityLike
 from ..orbit.Orbits import Orbit
+from ._typing import QuantityLike
+from .Potential import Potential
 
 class MovingObjectPotential(Potential):
     def __init__(

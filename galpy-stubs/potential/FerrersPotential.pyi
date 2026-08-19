@@ -1,5 +1,5 @@
-from .Potential import Potential
 from ._typing import CoordinateLike, Numeric, QuantityLike
+from .Potential import Potential
 
 class FerrersPotential(Potential):
     def __init__(

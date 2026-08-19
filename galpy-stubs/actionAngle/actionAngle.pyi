@@ -1,5 +1,6 @@
-from ..potential._typing import QuantityLike
 from optype import numpy as onp
+
+from ..potential._typing import QuantityLike
 
 type ActionResult = onp.ArrayND | float
 type ActionFrequencyResult = tuple[ActionResult, ActionResult]

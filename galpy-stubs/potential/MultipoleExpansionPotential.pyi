@@ -1,4 +1,5 @@
-from typing import Callable, Literal, Self
+from collections.abc import Callable
+from typing import Literal, Self
 
 from optype import numpy as onp
 

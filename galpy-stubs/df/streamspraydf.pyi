@@ -3,8 +3,8 @@ from typing import Literal, override
 
 from optype import numpy as onp
 
-from ..potential.Potential import Potential
 from ..potential._typing import Numeric, QuantityLike
+from ..potential.Potential import Potential
 from .df import df
 from .streamTrack import StreamTrack, StreamTrackPair
 

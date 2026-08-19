@@ -1,8 +1,9 @@
-from optype import numpy as onp
 from typing import override
 
-from ..potential.Potential import Potential
+from optype import numpy as onp
+
 from ..potential._typing import Numeric, QuantityLike
+from ..potential.Potential import Potential
 from .sphericaldf import isotropicsphericaldf
 
 class eddingtondf(isotropicsphericaldf):

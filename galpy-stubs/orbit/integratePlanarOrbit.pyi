@@ -1,7 +1,7 @@
 from optype import numpy as onp
 
-from ..potential.Potential import Potential
 from ..potential.planarForce import planarForce
+from ..potential.Potential import Potential
 
 type PotentialInput = Potential | planarForce | list[Potential | planarForce]
 type IntegrationResult = tuple[onp.ArrayND, onp.ArrayND]

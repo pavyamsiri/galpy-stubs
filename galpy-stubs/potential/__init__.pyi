@@ -4,11 +4,17 @@ from .CompositePotential import CompositePotential
 from .DoubleExponentialDiskPotential import DoubleExponentialDiskPotential
 from .Force import Force
 from .IsochronePotential import IsochronePotential
+from .linearCompositePotential import linearCompositePotential
+from .linearPotential import linearPotential
 from .LogarithmicHaloPotential import (
     LogarithmicHaloPotential as _LogarithmicHaloPotential,
 )
 from .MiyamotoNagaiPotential import MiyamotoNagaiPotential as _MiyamotoNagaiPotential
 from .MultipoleExpansionPotential import MultipoleExpansionPotential
+from .mwpotentials import MWPotential2014
+from .planarCompositePotential import planarCompositePotential
+from .planarForce import planarForce
+from .planarPotential import planarPotential
 from .PlummerPotential import PlummerPotential
 from .Potential import Potential, PotentialError
 from .PowerSphericalPotential import KeplerPotential, PowerSphericalPotential
@@ -27,12 +33,6 @@ from .TwoPowerTriaxialPotential import (
     TriaxialNFWPotential,
     TwoPowerTriaxialPotential,
 )
-from .linearCompositePotential import linearCompositePotential
-from .linearPotential import linearPotential
-from .mwpotentials import MWPotential2014
-from .planarCompositePotential import planarCompositePotential
-from .planarForce import planarForce
-from .planarPotential import planarPotential
 
 CompositePotential = CompositePotential
 DoubleExponentialDiskPotential = DoubleExponentialDiskPotential

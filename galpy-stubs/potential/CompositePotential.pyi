@@ -1,10 +1,10 @@
 from typing import override
 
+from ._typing import QuantityLike
+from .baseCompositePotential import baseCompositePotential
 from .DissipativeForce import DissipativeForce
 from .Force import Force
 from .Potential import Potential
-from .baseCompositePotential import baseCompositePotential
-from ._typing import QuantityLike
 
 class CompositePotential(baseCompositePotential, DissipativeForce, Potential):
     def __init__(

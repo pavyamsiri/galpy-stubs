@@ -1,6 +1,6 @@
+from ._typing import CoordinatePair, QuantityLike
 from .Potential import Potential
 from .WrapperPotential import parentWrapperPotential
-from ._typing import CoordinatePair, QuantityLike
 
 class OblateStaeckelWrapperPotential(parentWrapperPotential):
     def __new__(

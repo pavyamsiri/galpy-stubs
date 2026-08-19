@@ -1,5 +1,5 @@
-from .DissipativeForce import DissipativeForce
 from ._typing import QuantityLike, TimeDependentVector, TimeFunction
+from .DissipativeForce import DissipativeForce
 
 class NonInertialFrameForce(DissipativeForce):
     def __init__(

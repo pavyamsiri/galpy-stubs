@@ -2,9 +2,9 @@ from collections.abc import Callable
 
 from optype import numpy as onp
 
+from ._typing import Numeric, QuantityLike
 from .Potential import Potential
 from .SphericalPotential import SphericalPotential
-from ._typing import Numeric, QuantityLike
 
 class interpSphericalPotential(SphericalPotential):
     def __init__(

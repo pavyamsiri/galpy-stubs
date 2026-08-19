@@ -1,6 +1,6 @@
+from ._typing import CoordinateLike, QuantityLike
 from .Potential import Potential
 from .WrapperPotential import WrapperPotential
-from ._typing import CoordinateLike, QuantityLike
 
 class RotateAndTiltWrapperPotential(WrapperPotential):
     def __init__(

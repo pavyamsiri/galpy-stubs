@@ -1,5 +1,5 @@
-from .EllipsoidalPotential import EllipsoidalPotential
 from ._typing import CoordinateLike, QuantityLike
+from .EllipsoidalPotential import EllipsoidalPotential
 
 class TriaxialGaussianPotential(EllipsoidalPotential):
     def __init__(

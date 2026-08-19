@@ -1,6 +1,6 @@
+from ..potential._typing import Numeric, QuantityLike
 from .df import df
 from .surfaceSigmaProfile import expSurfaceSigmaProfile, surfaceSigmaProfile
-from ..potential._typing import Numeric, QuantityLike
 
 type SurfaceSigmaInput = type[surfaceSigmaProfile] | surfaceSigmaProfile
 type DiskProfileParams = tuple[QuantityLike, QuantityLike, QuantityLike]

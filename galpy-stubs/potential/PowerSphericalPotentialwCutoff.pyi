@@ -1,5 +1,5 @@
-from .Potential import Potential
 from ._typing import QuantityLike
+from .Potential import Potential
 
 class PowerSphericalPotentialwCutoff(Potential):
     def __init__(

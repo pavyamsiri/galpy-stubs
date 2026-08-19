@@ -1,5 +1,5 @@
-from .actionAngleInverse import actionAngleInverse
 from ..potential._typing import QuantityLike
+from .actionAngleInverse import actionAngleInverse
 
 class actionAngleHarmonicInverse(actionAngleInverse):
     def __init__(

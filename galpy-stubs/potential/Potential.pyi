@@ -1,7 +1,7 @@
 from typing import Literal, override
 
+from ._typing import Numeric, QuantityLike
 from .Force import Force
-from ._typing import QuantityLike, Numeric
 
 class Potential(Force):
     dim: Literal[3]

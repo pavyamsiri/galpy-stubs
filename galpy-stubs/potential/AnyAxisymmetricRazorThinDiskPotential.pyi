@@ -1,6 +1,7 @@
 from collections.abc import Callable
-from .Potential import Potential
+
 from ._typing import Numeric, QuantityLike
+from .Potential import Potential
 
 class AnyAxisymmetricRazorThinDiskPotential(Potential):
     def __init__(

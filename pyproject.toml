@@ -14,7 +14,7 @@ authors = [
 ]
 dependencies = [
     "galpy>=1.12.0",
-    "optype[numpy]>=0.17.0",
+    "optype[numpy]>=0.18.0",
 ]
 
 classifiers = [
